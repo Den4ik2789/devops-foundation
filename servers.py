@@ -1,4 +1,4 @@
-my_servers = ["web-node-1", "database-main", "backup-server"]
+my_servers = ["web-node-1", "database-main", "backup-server", "auth-server"]
 
 print("Починаю перевірку інфраструктури...")
 
