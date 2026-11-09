@@ -1,19 +1,19 @@
-name : DevOps CI Pipeline
+name: DevOps CI Pipeline
 
 on:
   push:
     branches:
       - master
 
-  jobs:
-    test-build:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Завантаження коду
-          uses: actions/checkout@v4
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Завантаження коду
+        uses: actions/checkout@v4
 
-        - name: Перевірка збірки Docker
-          run: |
-            cd my-first-container
-            docker build -t test-python-app .
-            echo "Контейнер успішно зібрано на серверах GitHub!"
+      - name: Перевірка збірки Docker
+        run: |
+          cd my-first-container
+          docker build -t test-python-app .
+          echo "Контейнер успішно зібрано на серверах GitHub!"
